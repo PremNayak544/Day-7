@@ -1,0 +1,26 @@
+<html>
+<head>
+    <title>Animation</title>
+        <style type="text/css">
+         #D{width: 20%;height: 250px;background-color: blueviolet;
+            animation-name: jigs;
+            animation-duration:2.5s; 
+            animation-iteration-count:infinite; 
+            animation-fill-mode:backwards;             
+            position: relative;
+         }
+         @keyframes jigs
+         {
+             0%{background-color: violet;top: 0px;left: 0px}
+             25%{background-color: white; top: 250px;left:500px;}
+             50%{background-color: red; top: 250px;left: 1500px;}
+             80%{background-color: white; top: 250px; left : 200px; transform: rotate(360deg);border-radius: 200%;}
+             90%{background-color: white; top: 300px;left:300px;border-radius: 200%}
+             100%{background-color: navy;top:0px;left: 0px;}
+         }
+        </style>
+    </head>
+    <body>
+        <div id="D"></div>
+    </body>
+</html>
